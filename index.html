@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>MineX</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Mine<span>X</span></a>
+            <img id="mobile-cta" class="mobile-menu" src="menu.svg" alt="open navigation">
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="exit.svg" alt="close navigation">
+                <ul class="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#feat">Features</a></li>
+                    <li><a href="#Contactme1">Contact Me</a></li>
+                </ul> 
+
+                <ul class="secondary-nav">
+                    <li><a href="https://www.linkedin.com/in/akshay-pratap-singh-544167204">About Developer</a></li>
+                    <li class="go-premium-cta"><a href="https://akshaytest1.glideapp.io/">Try Now</a></li>
+                </ul> 
+            </nav>
+
+
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's pretty much everything that you need.</p>
+                <h1>A Resources App that doesn't let you down.</h1>
+
+                <div class="hero-cta">
+                    <a href="https://akshaytest1.glideapp.io/" class="primary-cta">Try For Free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="watch.svg" alt="Watch a video">Watch a Video
+                    </a>
+                </div>
+            </div>
+            <img src="appimg.png" class="hero-image" alt="illustration">
+        </div>
+    </section>
+
+    <section id="feat" class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Class Materials</li>
+                <li>Recorded lectures/Sessions</li>
+                <li>Reference Books</li>
+                <li>Exam DateSheet</li>
+                <li>Previous Year Materials</li>
+                <li>Classmates Contact Info</li>
+                <li>Other Awesome Features</li>
+            </ul>
+            <img src="appimg.png" alt="app image">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+        <ul>
+            <li>
+                <img src="icon (2).png" alt="Person">
+                <blockquote>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a sem a lacus sagittis aliquam ut a leo. Nam ut risus placerat, convallis purus ac, eleifend ipsum. Proin vitae lectus tempor, malesuada purus non, placerat odio</blockquote>
+                    <cite>- XYZ ABC</cite>
+            </li>
+            <li>
+                <img src="icon (2).png" alt="Person">
+                <blockquote>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a sem a lacus sagittis aliquam ut a leo. Nam ut risus placerat, convallis purus ac, eleifend ipsum. Proin vitae lectus tempor, malesuada purus non, placerat odio</blockquote>
+                    <cite>- XYZ ABC</cite>
+            </li>
+            <li>
+                <img src="icon (2).png" alt="Person">
+                <blockquote>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a sem a lacus sagittis aliquam ut a leo. Nam ut risus placerat, convallis purus ac, eleifend ipsum. Proin vitae lectus tempor, malesuada purus non, placerat odio</blockquote>
+                    <cite>- XYZ ABC</cite>
+            </li>
+        </ul>
+    </div>
+    </section>
+
+    <section id="Contactme1" class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="mailto:akshayps1972@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" >
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" >
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.121018825102!2d86.43899201481655!3d23.814295284557918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6bc9fac678481%3A0x122cb1d133a89995!2sIndian%20Institute%20of%20Technology%20(Indian%20School%20of%20Mines)%20Dhanbad!5e0!3m2!1sen!2sin!4v1630314285626!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+   
+    
+
+
+    <script>
+        const mobileBtn= document.getElementById('mobile-cta');
+            nav =document.querySelector('nav');
+            mobileBtnExit=document.getElementById('mobile-exit');
+        
+            mobileBtn.addEventListener('click', ()=>{
+            nav.classList.add('menu-btn');
+        })
+
+        
+        mobileBtnExit.addEventListener('click', ()=>{
+        nav.classList.remove('menu-btn');})
+
+    </script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
